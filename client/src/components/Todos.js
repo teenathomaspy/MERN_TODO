@@ -9,6 +9,7 @@ import Todo from './Todo';
 const Todos = () => {
     const dispatch = useDispatch();
     const getAllTodos = useSelector((state) => state.todo)
+  
     useEffect(() =>{
         console.log("in useEffect");
         dispatch(getAllTodoThunk());
